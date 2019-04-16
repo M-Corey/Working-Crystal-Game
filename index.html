@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Crystals/Boxes!</title>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Boring Box Matcher</h1>
+            <h2>Rules! Please dont break them.</h2>
+            <p class="lead">You will be given a random number at the start of the game. There are four very boring
+                looking boxes. By clicking on a box you will add a unknow amount of points to your total score. You win
+                the game by matching your total
+                score to the ramdomly generated number, you lose the game if your total score goes above the random
+                number.</p>
+            <p>The value of each boring looking boxes is hidden from you until you click on it. Each time when the game
+                starts, the game will change the values of each box.</p>
+        </div>
+    </div>
+    <br>
+    <div class="row, container">
+        <h3 class="col-sm-6"></h3>
+        <h3 class="col-sm-6">Target Score:
+            <span id='targetScore'>0</span>
+        </h3>
+        <h3 class="col-sm-2 ">Your Score: <span id='MyScore'>0</span>
+        </h3>
+
+        <br>
+
+        <div class="buttons">
+            <button class="diamond" id="red" value="8">Red</button>
+            <button class="diamond" id="yellow" value="2">Yellow</button>
+            <button class="diamond" id="green" value="3">Green</button>
+            <button class="diamond" id="blue" value="1">Blue</button>
+        </div>
+        <br>
+        <footer>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Thanks for Playing!</h1>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
